@@ -47,26 +47,48 @@ h1 {
     /* gap: 100px; */
 }
 
+
 .vert-row {
+    display: flex;
     border: 4px solid orangered;
     flex-direction: column;
-    width:40%;
-    height:100%;
+    width: 40%;
     text-align: center;
-    flex-grow: 1;
-    // padding:1em;
-}
-
-.vert__item {
+  }
+  
+  .vert__item {
     border: 4px solid greenyellow;
-    color:white;
-    background-color:#136c72;
-    padding: 1em;
-    font-size: 1em;    
-}
+    color: white;
+    background-color: #136c72;
+    padding: 1rem;
+    font-size: 1rem;
+    flex-grow: 1; // shouldn't this work ? yes it worked
+  }
+  
+// .vert-row {
+//     display: flex;
+//     border: 4px solid orangered;
+//     flex-direction: column;
+//     width:40%;
+//     text-align: center;
+//     // height:100%; // Actually made the vertical row use less space 
+//     // align-items: stretch;    
+//     // padding:1em;
+// }
+
+// .vert__item {
+//     display: flex;
+//     border: 4px solid greenyellow;
+//     color:white;
+//     background-color:#136c72;
+//     padding: 1rem;
+//     align-self: stretch;
+//     font-size: 1rem;  // changing this to em seems to have the items use all the space...but...maybe not  
+//     flex-grow: 1; // shouldn't this work ? 
+// }
 
 .vert__item h1 {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .quality_designs {
