@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conquering Responsive Layouts</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">    
+
     <link rel="stylesheet" href="style.css">
 </head>
     <body>
@@ -12,12 +15,21 @@
         </header> 
         
         <div class="container">
-            <div class="row top-section">
-                <div class="content">
-                    <h1>LOREM IPSUM SIT</h1>           
-                    Responsive Layouts don't have to be a struggle
-                </div>
+            <div class="row hero">
+                   <div class="hero__title">LOREM IPSUM SIT </div>           
+                    <div class="hero__body">Responsive Layouts don't have to be a struggle
+                        <br/>
+                        <img  src="./img/logofbc3.svg" alt="">
+                    </div>
+                    
+                    <!--
+                    <h4 class="hero__content--title">LOREM IPSUM SIT</h4>
+                    <p class="hero__content--body">Responsive Layouts don't have to be a struggle</p>
+                    -->
             </div>
         </div>
+
+
+                
     </body> 
 </html>
